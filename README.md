@@ -52,7 +52,7 @@ The [Redux Devtools](https://github.com/gaearon/redux-devtools) allow you to ins
 - [ ] For each value we intend to save in the state, we'll need a reducer. We'll define these in the reducers directory.
 - [ ] Once all of our reducers are written, we need to combine them into a single root reducer using `combineReducers`.
 - [ ] Pass the root reducer into `createStore` to define the store object which contains a Redux state.  
-- [ ] Read [this article](http://redux.js.org/docs/basics/UsageWithReact.html) to learn about the difference between container components and presentational components.
+- [ ] Read [this article](https://hackernoon.com/getting-started-with-react-redux-1baae4dcb99b) to learn a bit more about redux from a previous HiR!
 - [ ] Code out the containers set up for you in the `containers` directory.  These should use the React-Redux `.connect` method to connect the actions you wrote out earlier with the event handlers passed into each component.(Check out the documentation for the `.connect` method [here](https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) for more information)
 - [ ] In the `index.js` file, import the `Provider` class from react-redux, and then use it to wrap your `<App />` (Check out the documentation for the Provider component [here](https://github.com/reactjs/react-redux/blob/master/docs/api.md#provider-store) for more information)
 - [ ] Swap out the components in `App.js` for the containers you just created.  You shouldn't have to pass any props down to these components, as they will be pulled directly from your store thanks to the `Provider` and `.connect` setup we completed earlier.
