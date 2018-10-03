@@ -45,14 +45,14 @@ The [Redux Devtools](https://github.com/gaearon/redux-devtools) allow you to ins
 
 ## Bare Minimum Requirements
 - [ ] Make your API key available to the rest of your application from a new file, 'src/config/youtube.js' Webpack won't build until you create this file.
-- [ ] Check out [this article](https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3) for a thorough walkthrough of how to implement Redux and Thunk in a React application.
+- [ ] Check out [this article](https://hackernoon.com/getting-started-with-react-redux-1baae4dcb99b) for a thorough walkthrough of how to implement Redux and Thunk in a React application.
 - [ ] Take a moment to think about what actions our application will need.  Remember that actions are objects that describe changes to the redux state.  A good place to start is to think about what ways the user of our site can interact with it.  
 - [ ] Define your *action creators* in the actions folder. These are functions which should return your action.
 - [ ] Plan out what your application state will look like.  A good place to start is to look at all of the values that are currently stored in state in our React components.  In Redux, we will store all of these values in our Redux state.
 - [ ] For each value we intend to save in the state, we'll need a reducer. We'll define these in the reducers directory.
 - [ ] Once all of our reducers are written, we need to combine them into a single root reducer using `combineReducers`.
 - [ ] Pass the root reducer into `createStore` to define the store object which contains a Redux state.  
-- [ ] Read [this article](https://hackernoon.com/getting-started-with-react-redux-1baae4dcb99b) to learn a bit more about redux from a previous HiR!
+- [ ] Read [this article](http://redux.js.org/docs/basics/UsageWithReact.html) to learn a bit more about redux from a previous HiR!
 - [ ] Code out the containers set up for you in the `containers` directory.  These should use the React-Redux `.connect` method to connect the actions you wrote out earlier with the event handlers passed into each component.(Check out the documentation for the `.connect` method [here](https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) for more information)
 - [ ] In the `index.js` file, import the `Provider` class from react-redux, and then use it to wrap your `<App />` (Check out the documentation for the Provider component [here](https://github.com/reactjs/react-redux/blob/master/docs/api.md#provider-store) for more information)
 - [ ] Swap out the components in `App.js` for the containers you just created.  You shouldn't have to pass any props down to these components, as they will be pulled directly from your store thanks to the `Provider` and `.connect` setup we completed earlier.
